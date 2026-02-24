@@ -1,6 +1,7 @@
 import React, { useState, FormEvent } from 'react';
 import { Mail, Phone, MapPin, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 import emailjs from "@emailjs/browser";
+import parkingImg from '../assets/parking.png';
 
 export const AboutInvestor: React.FC = () => (
   <section id="o-inwestorze" className="py-20 bg-gray-50 scroll-mt-20">
@@ -24,7 +25,7 @@ export const AboutInvestor: React.FC = () => (
       <div className="mt-12 relative rounded-xl overflow-hidden shadow-lg h-96 sm:h-[28rem]">
   {/* Obraz w tle dopasowany do całej karty */}
         <img
-          src="./assets/parking.png"
+          src={parkingImg}
           alt="Nasze inwestycje"
           className="absolute inset-0 w-full h-full object-cover brightness-75 blur-sm"
         />
