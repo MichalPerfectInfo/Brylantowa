@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
             <span className="text-primary-600">Twój Nowy Dom</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
-            Nowoczesne osiedle domów w zabudowie szeregowej, łączące bliskość natury z komfortem miejskiego życia. Odkryj standard, na jaki zasługujesz.
+            Kameralne osiedle domów jednorodzinnych w otoczeniu starodrzewu. Idealne miejsce dla rodzin szukających ciszy z szybkim dojazdem do centrum stolicy. Nowoczesna architektura łączy się tu z naturą.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a 
@@ -48,7 +48,7 @@ export const Hero: React.FC = () => {
         {/* Right Slider / Image */}
         <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] md:h-[500px]">
           <img 
-            src="https://lh3.googleusercontent.com/pw/AP1GczNFEQUX8YsFbxBBf72ASpKLvou2Y88B1tcGmWiMmiSNucAEpBuh0Z5uIfQ-RSruZCMD9XPCoiNQ7aLi2WC5hD0iOLAAVf-FSRTNEKk1JJohw-aOTXkVpnNR9Qu5L3VzJYwBgjrFhUss6er9NaVEprkp=w1920-h1080-s-no-gm" 
+            src="https://lh3.googleusercontent.com/pw/AP1GczNw163adPKq2zoI0Cat2lF_JoHrQd14yKq-pl0NMlntJ4KRQQHyU2TkqedEU6zcDMYdcghM9x1fRVd5IN7GMVlRvGDQ92UwqTwMPZPZ0rn4NaDhl16YtSzZV0fKzHJwZycXLEpX061HPd6Cbs6IueVS=w1333-h750-s-no-gm?authuser=0" 
             alt="Wizualizacja osiedla" 
             className="w-full h-full object-cover"
           />
@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
             <FeatureBox icon={<Home className="text-primary-600" />} title="Media miejskie" desc="Pełne uzbrojenie terenu" />
             <FeatureBox icon={<ShieldCheck className="text-primary-600" />} title="Prywatność" desc="Własna brama i furtka" />
             <FeatureBox icon={<Maximize className="text-primary-600" />} title="Duże podjazdy" desc="Powierzchnia ok. 60 m²" />
-            <FeatureBox icon={<Home className="text-primary-600" />} title="Ogródki" desc="Nawet do 150m" />
+            <FeatureBox icon={<Home className="text-primary-600" />} title="Ogródki" desc="Nawet do 152m" />
             <FeatureBox icon={<Wifi className="text-primary-600" />} title="Technologia" desc="Światłowód i ogrzewanie" />
           </div>
         </div>

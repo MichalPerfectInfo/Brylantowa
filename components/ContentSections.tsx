@@ -33,11 +33,11 @@ export const LocationSection: React.FC = () => (
           Bliskość trasy S8 zapewnia ekspresowy dojazd do stolicy.
         </p>
         <div className="space-y-4">
-          <LocationCard icon={<Car size={20} />} title="Centrum Warszawy (33 km)" time="30 minut samochodem" />
-          <LocationCard icon={<Building2 size={20} />} title="Przedszkole i Żłobek Moje Montessori (550 m)" time="8 min spacerem" />
-          <LocationCard icon={<School size={20} />} title="Szkoła Podstawowa Nr 2 (900 m)" time="12 minut spacerem" />
-          <LocationCard icon={<Waves size={20} />} title="Radzymiński Ośrodek Kultury i Sportu (1.7 km)" time="4 minuty samochodem" />
-          <LocationCard icon={<Bus size={20} />} title="Przystanek szybkiej linii R9 (1.1 km)" time="12 minut spacerem" />
+          <LocationCard icon={<Car size={20} />} title="Centrum Warszawy (33 km)" time="31 minut samochodem" />
+          <LocationCard icon={<Building2 size={20} />} title="Przedszkole i Żłobek Moje Montessori (850 m)" time="12 min spacerem" />
+          <LocationCard icon={<School size={20} />} title="Szkoła Podstawowa Nr 2 (1.2 km)" time="16 minut spacerem" />
+          <LocationCard icon={<Waves size={20} />} title="Radzymiński Ośrodek Kultury i Sportu (2 km)" time="5 minuty samochodem" />
+          <LocationCard icon={<Bus size={20} />} title="Przystanek szybkiej linii R9 (1.4 km)" time="16 minut spacerem" />
         </div>
       </div>
       
@@ -93,7 +93,7 @@ export const StandardsSection: React.FC = () => (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
-           <img src="https://lh3.googleusercontent.com/pw/AP1GczOIMjJhVf-ZJ5iwV9TXexUAqS1nLCGM2QI84-qhb8PoGr7t4z80-Pk2WDryavkAgMee2gvHeO-GtV_YpqOkU44xS8y_8DtAELITbz3ks8eTzFjb1FG1sYQdq8g-wxLDAZoe6JLgKUKuhzQql7I4wBE=w958-h539-s-no-gm?authuser=0" alt="Osiedle" className="rounded-2xl shadow-lg" />
+           <img src="https://lh3.googleusercontent.com/pw/AP1GczPlP-6p1iRnG8i3lO6a0L1tuj3g873Gk07yxiV9dqbamIVZDUsgIKL9L45Bjcfk2If0lA_dyS9Ode3j_UOCMbjnDcFRa1wsd8_w1zwqneoT_uC2mhwlGupAhh-EYCMK-YEJxXKw4k2IC5hjSoUHOEy1=w1333-h750-s-no-gm?authuser=0" alt="Osiedle" className="rounded-2xl shadow-lg" />
         </div>
         <div className="order-1 lg:order-2">
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
@@ -127,7 +127,7 @@ export const StandardsSection: React.FC = () => (
           </ul>
         </div>
         <div>
-           <img src="https://lh3.googleusercontent.com/pw/AP1GczPFdfY6aDz_LLcwjGbN9xDrGjLEU22U28SRPs8t4SJgH9Z-5bdavwvWibjfJ9K3HDIwmFRxpvXruE-n0CEeoU5VHYv4gv8sLPV6QBS-8mhBJXC_e4VMdTUGlowVJ8Kks0iaaKepE0gsyx_XzY5dAJs=w958-h539-s-no-gm?authuser=0" alt="Architektura" className="rounded-2xl shadow-lg" />
+           <img src="https://lh3.googleusercontent.com/pw/AP1GczNw163adPKq2zoI0Cat2lF_JoHrQd14yKq-pl0NMlntJ4KRQQHyU2TkqedEU6zcDMYdcghM9x1fRVd5IN7GMVlRvGDQ92UwqTwMPZPZ0rn4NaDhl16YtSzZV0fKzHJwZycXLEpX061HPd6Cbs6IueVS=w1333-h750-s-no-gm?authuser=0" alt="Architektura" className="rounded-2xl shadow-lg" />
         </div>
       </div>
     </div>
@@ -136,7 +136,7 @@ export const StandardsSection: React.FC = () => (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
-           <img src="https://lh3.googleusercontent.com/pw/AP1GczPIlKVkC3fUAUIRe-op6L7ESWhgBr-0v2SY6fyUZUv8Xi5Si0vmXwL2-sDtz46ChbwQMq8msllr_3zPVRrCvPwCxTq5drRSFLH919-9PFp89_O8Bkt-kv58fGHW-dJi5NutBrELF5_bmShlz5e6-0E=w958-h539-s-no-gm?authuser=0" alt="Ogród" className="rounded-2xl shadow-lg" />
+           <img src="https://lh3.googleusercontent.com/pw/AP1GczNkDmYZPTCKOtCMtSmNJfUqHotkMun86mGa7VP8wZ-msBOX1el8pmZUzt9EDakppf9X0GMRzCrHqp2FYnFe5blNBbfDfCZifF8Cic-gihv3F42k4FJvJQzN586FYaoudLYHlQ3Rvm1elp00ogrNjjCs=w1333-h750-s-no-gm?authuser=0" alt="Ogród" className="rounded-2xl shadow-lg" />
         </div>
         <div className="order-1 lg:order-2">
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
@@ -190,37 +190,52 @@ const TechItem = ({ icon, text }: { icon: React.ReactNode, text: string }) => (
 
 export const LayoutInfo: React.FC = () => (
   <section className="py-20 bg-gray-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Szeroki wybór funkcjonalnych wnętrz</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Nasze projekty są elastyczne. Oferujemy mieszkania o zróżnicowanych metrażach, które możesz dostosować do swoich potrzeb.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Mieszkania Parterowe</h3>
-          <p className="text-gray-600 mb-6 leading-relaxed">
-            Idealne dla rodzin z małymi dziećmi lub osób starszych. Brak schodów i bezpośrednie wyjście do ogrodu to atuty nie do przecenienia.
-          </p>
-          <ul className="space-y-3">
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> 2-3 sypialnie</li>
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Przestronny salon z aneksem</li>
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Bezpośrednie wyjście na taras</li>
-          </ul>
-        </div>
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Mieszkania na Piętrze</h3>
-          <p className="text-gray-600 mb-6 leading-relaxed">
-            Większa powierzchnia użytkowa i dodatkowa przestrzeń na poddaszu. Możliwość aranżacji dwupoziomowego apartamentu.
-          </p>
-          <ul className="space-y-3">
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Większy metraż całkowity</li>
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Duży balkon + opcja ogrodu</li>
-             <li className="flex items-center gap-3 text-gray-700"><span className="w-1.5 h-1.5 bg-primary-600 rounded-full"></span> Użytkowe poddasze</li>
-          </ul>
-        </div>
-      </div>
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        Szeroki wybór funkcjonalnych wnętrz
+      </h2>
+      <p className="text-gray-600 max-w-2xl mx-auto">
+        Nasze projekty są elastyczne. Oferujemy mieszkania o zróżnicowanych metrażach,
+        które możesz dostosować do swoich potrzeb.
+      </p>
     </div>
-  </section>
+
+    {/* JEDNA KARTA */}
+    <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+      
+      <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+        Komfortowe mieszkanie rodzinne
+      </h3>
+
+      <p className="text-gray-600 mb-8 leading-relaxed">
+        Przemyślany układ pomieszczeń zapewnia maksymalną funkcjonalność
+        i wygodę codziennego życia. Duża strefa dzienna, komfortowe sypialnie
+        oraz dodatkowa przestrzeń użytkowa pozwalają dopasować wnętrze
+        do indywidualnych potrzeb domowników.
+      </p>
+
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <li className="flex items-center gap-3 text-gray-700">
+          <span className="w-2 h-2 bg-primary rounded-full"></span>
+          3 sypialnie
+        </li>
+        <li className="flex items-center gap-3 text-gray-700">
+          <span className="w-2 h-2 bg-primary rounded-full"></span>
+          Przestronny salon z aneksem
+        </li>
+        <li className="flex items-center gap-3 text-gray-700">
+          <span className="w-2 h-2 bg-primary rounded-full"></span>
+          Ogródek
+        </li>
+        <li className="flex items-center gap-3 text-gray-700">
+          <span className="w-2 h-2 bg-primary rounded-full"></span>
+          Dodatkowa przestrzeń użytkowa
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
 );

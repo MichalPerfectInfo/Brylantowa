@@ -80,7 +80,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                  <div className="p-3 bg-primary-50 rounded-lg text-primary-700"><MapPin /></div>
                  <div>
                    <h4 className="font-bold text-gray-900 text-lg mb-1">Biuro Dewelopera</h4>
-                   <p className="text-gray-600">ul. Sybiraków 10<br/>05-250 Radzymin</p>
+                   <p className="text-gray-600">ul. Sybiraków 33<br/>05-250 Radzymin</p>
                  </div>
               </div>
               <div className="flex items-start gap-4">
@@ -107,7 +107,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                <img src="https://lh3.googleusercontent.com/pw/AP1GczPXEzn7YW05Lnap5GAIH3q4bpSJd3eBf_IC31_DYghyRpvD0S9Rd6FObkl1D-uCL9CJPxZPhavzRHVxve4oz8g5aqF1ozGoMf_E4mnG0U-PoT1BbzSspTBWKNWSV-xTLT7qlMozeD3Hz0wXgR7jRxeo=w1010-h669-s-no-gm?authuser=1" alt="Mapa" className="absolute inset-0 w-full h-full object-cover opacity-70 transition-opacity group-hover:opacity-90" />
                <div className="relative z-10 flex flex-col gap-3">
                   <a 
-                    href="https://maps.app.goo.gl/MpkHZcT6qQxcMKfz6" 
+                    href="https://maps.app.goo.gl/GE3azCcsDe13gZME9" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white px-4 py-2 rounded shadow-md hover:shadow-lg transition-all text-gray-900 font-semibold text-sm"

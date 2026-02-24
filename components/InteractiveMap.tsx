@@ -2,19 +2,19 @@ import React, { useEffect, useRef } from 'react';
 import * as L from 'leaflet';
 
 // Współrzędne: Radzymin, Nowa Lokalizacja
-const CENTER_LAT = 52.41106452573477;
-const CENTER_LNG = 21.165144314527712;
+const CENTER_LAT = 52.40898;
+const CENTER_LNG = 21.16302;
 
 const POIS = [
   // Warszawa - Pałac Kultury i Nauki
-  { id: 1, lat: 52.41147, lng: 21.17744, title: "Sklep Lidl", dist: "1.8 km", icon: "shop" },
-  { id: 2, lat: 52.41517, lng: 21.17844, title: "Radzymiński Ośrodek Kultury i Sportu", dist: "1.7 km", icon: "waves" },
-  { id: 3, lat: 52.41721, lng: 21.16606, title: "Szkoła Podstawowa Nr 2", dist: "900 m", icon: "school" },
-  { id: 4, lat: 52.41342, lng: 21.18175, title: "Park Eleonory Czartoryskiej", dist: "2.3 km", icon: "park" },
-  { id: 5, lat: 52.42431, lng: 21.17552, title: "Radzymin- Stacja kolejowa", dist: "2 km", icon: "train" },
-  { id: 6, lat: 52.41806, lng: 21.18205, title: "Kolegiata pw. Przemienienia Pańskiego i św. Jana Chrzciciela", dist: "2.8 m", icon: "church" },
-  { id: 7, lat: 52.41088, lng: 21.17063, title: "Przedszkole i Żłobek Moje Montessori", dist: "550 m", icon: "kid" },
-  { id: 8, lat: 52.40766, lng: 21.17510, title: "Przystanek szybkiej linii R9", dist: "1.2 km", icon: "bus" },
+  { id: 1, lat: 52.41147, lng: 21.17744, title: "Sklep Lidl", dist: "2.1 km", icon: "shop" },
+  { id: 2, lat: 52.41517, lng: 21.17844, title: "Radzymiński Ośrodek Kultury i Sportu", dist: "2 km", icon: "waves" },
+  { id: 3, lat: 52.41721, lng: 21.16606, title: "Szkoła Podstawowa Nr 2", dist: "1.2 km", icon: "school" },
+  { id: 4, lat: 52.41342, lng: 21.18175, title: "Park Eleonory Czartoryskiej", dist: "2.6 km", icon: "park" },
+  { id: 5, lat: 52.42431, lng: 21.17552, title: "Radzymin- Stacja kolejowa", dist: "2.3 km", icon: "train" },
+  { id: 6, lat: 52.41806, lng: 21.18205, title: "Kolegiata pw. Przemienienia Pańskiego i św. Jana Chrzciciela", dist: "3.1 m", icon: "church" },
+  { id: 7, lat: 52.41088, lng: 21.17063, title: "Przedszkole i Żłobek Moje Montessori", dist: "850 m", icon: "kid" },
+  { id: 8, lat: 52.40766, lng: 21.17510, title: "Przystanek szybkiej linii R9", dist: "1.5 km", icon: "bus" },
 ];
 
 export const InteractiveMap: React.FC = () => {

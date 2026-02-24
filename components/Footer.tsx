@@ -15,13 +15,13 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 text-white inline-block">Deweloper</h4>
             <div className="text-gray-400 text-sm space-y-3">
-              <p className="font-bold text-white text-lg mb-2">Szmaragdowa Nieruchomości Sp. z o.o.</p>
+              <p className="font-bold text-white text-lg mb-2">Brylantowa Nieruchomości Sp. z o.o.</p>
               <p>ul. Starej Baśni 6, Rybienko Nowe</p>
               <p>07-200 Wyszków</p>
               <div className="pt-4 space-y-1 text-xs opacity-60">
-                <p>NIP: 7622014168</p>
-                <p>KRS: 0000946595</p>
-                <p>REGON: 521012758</p>
+                <p>NIP: 7622023285</p>
+                <p>KRS: 0001137114</p>
+                <p>REGON: 540123090</p>
               </div>
             </div>
           </div>

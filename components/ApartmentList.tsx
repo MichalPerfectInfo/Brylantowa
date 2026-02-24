@@ -13,7 +13,7 @@ export const ApartmentList: React.FC = () => {
 
         <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden max-w-6xl mx-auto">
           <iframe
-            src="https://portal-raportujeceny-1wra.bolt.host/iframe/cd1fe991-1ccd-4938-a91b-eb7eb47d7e02/cff7149b-ff1a-4aa2-8e95-cd833ef4beb1"
+            src="https://portal-raportujeceny-1wra.bolt.host/iframe/1bf56da6-1839-423d-ba54-e60c2710cb37/7154b9ae-4d1f-4454-8bae-0f7ace9e0ffe"
             title="Lista dostępnych mieszkań"
             className="w-full h-[80vh] min-h-[700px] border-0"
             allowFullScreen

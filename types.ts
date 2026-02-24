@@ -1,8 +1,8 @@
 export interface Apartment {
   id: number;
   number: string;
-  floor: number; // 0 for ground
   rooms: number;
+  floor: number;
   area: number;
   gardenArea: number;
   polygonPoints?: string | string[]; // Współrzędne dla SVG mapy (opcjonalne)

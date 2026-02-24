@@ -233,7 +233,7 @@ export const InteractiveEstateMap: React.FC = () => {
       )}
 
       <img 
-        src="https://lh3.googleusercontent.com/pw/AP1GczNFEQUX8YsFbxBBf72ASpKLvou2Y88B1tcGmWiMmiSNucAEpBuh0Z5uIfQ-RSruZCMD9XPCoiNQ7aLi2WC5hD0iOLAAVf-FSRTNEKk1JJohw-aOTXkVpnNR9Qu5L3VzJYwBgjrFhUss6er9NaVEprkp=w1920-h1080-s-no-gm" 
+        src="https://lh3.googleusercontent.com/pw/AP1GczNw163adPKq2zoI0Cat2lF_JoHrQd14yKq-pl0NMlntJ4KRQQHyU2TkqedEU6zcDMYdcghM9x1fRVd5IN7GMVlRvGDQ92UwqTwMPZPZ0rn4NaDhl16YtSzZV0fKzHJwZycXLEpX061HPd6Cbs6IueVS=w1333-h750-s-no-gm?authuser=0" 
         alt="Wizualizacja Osiedla" 
         className="w-full h-auto block object-cover pointer-events-none"
       />
