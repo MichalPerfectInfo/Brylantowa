@@ -8,7 +8,7 @@ export const AboutInvestor: React.FC = () => (
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Inwestycje budowane na solidnych fundamentach</h2>
       <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
         <p>
-          DS Szmaragdowa to firma deweloperska z ogromnym doświadczeniem w realizacji kameralnych osiedli mieszkaniowych. 
+          Brylantowa Nieruchomości to firma deweloperska z ogromnym doświadczeniem w realizacji kameralnych osiedli mieszkaniowych. 
           Naszą misją jest tworzenie miejsc, które nie są tylko budynkami, ale prawdziwymi domami.
         </p>
         <p>
@@ -19,6 +19,25 @@ export const AboutInvestor: React.FC = () => (
           Współpracujemy wyłącznie ze sprawdzonymi wykonawcami i dostawcami materiałów budowlanych najwyższej jakości. 
           Jesteśmy dumni z terminowości naszych realizacji i transparentności procesu sprzedaży.
         </p>
+      </div>
+      {/* Karta z obrazem w tle i przyciskiem */}
+      <div className="mt-12 relative rounded-xl overflow-hidden shadow-lg h-96 sm:h-[28rem]">
+  {/* Obraz w tle dopasowany do całej karty */}
+        <img
+          src="assets\parking.png"
+          alt="Nasze inwestycje"
+          className="absolute inset-0 w-full h-full object-cover brightness-75 blur-sm"
+        />
+        {/* Tekst i przycisk */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Poznaj nasze inne inwestycje</h3>
+          <a
+            href="#"
+            className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-lg text-lg transition-colors"
+          >
+            Zobacz więcej
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -79,7 +98,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
               <div className="flex items-start gap-4">
                  <div className="p-3 bg-primary-50 rounded-lg text-primary-700"><MapPin /></div>
                  <div>
-                   <h4 className="font-bold text-gray-900 text-lg mb-1">Biuro Dewelopera</h4>
+                   <h4 className="font-bold text-gray-900 text-lg mb-1">Miejsce inwestycji</h4>
                    <p className="text-gray-600">ul. Sybiraków 33<br/>05-250 Radzymin</p>
                  </div>
               </div>

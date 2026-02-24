@@ -97,7 +97,7 @@ export const StandardsSection: React.FC = () => (
         </div>
         <div className="order-1 lg:order-2">
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Bezczynszowe mieszkania na wyasfaltowanym osiedlu</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Bezczynszowe mieszkania na kameralnym osiedlu</h3>
           <p className="text-gray-600 mb-8 text-lg leading-relaxed">
             Zapewniamy pełną prywatność na terenie zamkniętym. Każdy budynek został zaprojektowany z myślą o kameralności.
             Brak czynszu do wspólnoty to realna oszczędność w domowym budżecie. Płacisz tylko za to, co zużyjesz.
@@ -123,7 +123,7 @@ export const StandardsSection: React.FC = () => (
           </p>
           <ul className="space-y-4">
              <StandardListItem icon={<Car size={20} />} text="2 miejsca postojowe w cenie" />
-             <StandardListItem icon={<Layers size={20} />} text="Tynk elewacyjny wysokiej jakości" />
+             <StandardListItem icon={<Layers size={20} />} text="Wysokiej jakości materiały" />
           </ul>
         </div>
         <div>
