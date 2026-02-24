@@ -24,7 +24,7 @@ export const AboutInvestor: React.FC = () => (
       <div className="mt-12 relative rounded-xl overflow-hidden shadow-lg h-96 sm:h-[28rem]">
   {/* Obraz w tle dopasowany do całej karty */}
         <img
-          src="assets\parking.png"
+          src="./assets/parking.png"
           alt="Nasze inwestycje"
           className="absolute inset-0 w-full h-full object-cover brightness-75 blur-sm"
         />
