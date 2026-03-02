@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://MichalPerfectInfo.github.io/Brylantowa",
+  "homepage": "https:brylantowa-nieruchomosci.pl",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "leaflet": "1.9.4",
