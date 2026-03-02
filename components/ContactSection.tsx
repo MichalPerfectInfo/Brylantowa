@@ -2,6 +2,7 @@ import React, { useState, FormEvent } from 'react';
 import { Mail, Phone, MapPin, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 import emailjs from "@emailjs/browser";
 import parkingImg from '../assets/parking.png';
+import { Polityka }  from "../data/polityka";
 
 export const AboutInvestor: React.FC = () => (
   <section id="o-inwestorze" className="py-20 bg-gray-50 scroll-mt-20">
@@ -237,28 +238,32 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
       {/* Modal Polityki Prywatności */}
       {isModalOpen && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4"
-          onClick={() => setIsModalOpen(false)} // 1. Zamyka modal po kliknięciu w ciemne tło
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4 py-6"
+          onClick={() => setIsModalOpen(false)}
         >
+          {/* Główne okno modala z maksymalną wysokością */}
           <div 
-            className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full"
-            onClick={(e) => e.stopPropagation()} // 2. Zapobiega zamknięciu po kliknięciu w samo białe okienko
+            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full max-h-full flex flex-col"
+            onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-lg font-bold mb-4 text-gray-900">Polityka Prywatności</h2>
             
-            <div className="text-sm text-gray-600 mb-6 max-h-60 overflow-y-auto pr-2">
-              <p>Tutaj wklej pełną treść swojej polityki prywatności...</p>
+            {/* Kontener z przewijanym tekstem (scroll) */}
+            <div className="overflow-y-auto pr-2 custom-scrollbar">
+              {/* TUTAJ WSTAWIAMY NASZ NOWY KOMPONENT */}
+              <Polityka />
             </div>
 
-            <div className="flex justify-end">
+            {/* Przycisk Zamknij - zawsze na dole */}
+            <div className="flex justify-end mt-6 pt-4 border-t border-gray-100 shrink-0">
               <button
                 type="button"
                 onClick={() => setIsModalOpen(false)}
-                className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors font-medium"
+                className="px-6 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors font-bold"
               >
                 Zamknij
               </button>
             </div>
+            
           </div>
         </div>
       )}
