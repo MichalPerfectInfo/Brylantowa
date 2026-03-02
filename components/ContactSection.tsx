@@ -46,6 +46,7 @@ export const AboutInvestor: React.FC = () => (
 
 export const ContactSection: React.FC = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
@@ -203,7 +204,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                 <div className="flex items-start gap-2">
                   <input type="checkbox" id="privacy" required className="mt-1 w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500" />
                   <label htmlFor="privacy" className="text-xs text-gray-500 cursor-pointer">
-                    Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z <a href="#" className="underline">polityką prywatności</a>.
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z <button type="button" onClick={() => setIsModalOpen(true)} className="underline cursor-pointer">polityką prywatności</button>.
                   </label>
                 </div>
 
@@ -232,6 +233,35 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
           </div>
         </div>
       </div>
+
+      {/* Modal Polityki Prywatności */}
+      {isModalOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4"
+          onClick={() => setIsModalOpen(false)} // 1. Zamyka modal po kliknięciu w ciemne tło
+        >
+          <div 
+            className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full"
+            onClick={(e) => e.stopPropagation()} // 2. Zapobiega zamknięciu po kliknięciu w samo białe okienko
+          >
+            <h2 className="text-lg font-bold mb-4 text-gray-900">Polityka Prywatności</h2>
+            
+            <div className="text-sm text-gray-600 mb-6 max-h-60 overflow-y-auto pr-2">
+              <p>Tutaj wklej pełną treść swojej polityki prywatności...</p>
+            </div>
+
+            <div className="flex justify-end">
+              <button
+                type="button"
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors font-medium"
+              >
+                Zamknij
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
