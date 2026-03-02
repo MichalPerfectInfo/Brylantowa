@@ -33,7 +33,7 @@ export const AboutInvestor: React.FC = () => (
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Poznaj nasze inne inwestycje</h3>
           <a
-            href="#"
+            href="https://szmaragdowa-nieruchomosci.pl"
             className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-lg text-lg transition-colors"
           >
             Zobacz więcej
