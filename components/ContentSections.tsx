@@ -2,13 +2,15 @@ import React from 'react';
 import { MapPin, Car, Train, TreePine, ShoppingCart, Layers, Shield, Droplets, Grid, Flame, Wind, VolumeX, Building2, School, Waves, Bus } from 'lucide-react';
 import { InteractiveMap } from './InteractiveMap';
 import { InteractiveEstateMap } from './InteractiveEstateMap';
+import png2 from "../assets/png2.jpg";
+import png3 from "../assets/png3.jpg";
 
 export const VisualNavigator: React.FC = () => (
   <section id="nawigator" className="py-20 bg-gray-50 scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Nawigator Osiedla</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-gray-600 max-w-2xl mx-auto text-lg sm:whitespace-nowrap">
           Zobacz statusy mieszkań na interaktywnej wizualizacji. Wybierz swój wymarzony dom.
         </p>
       </div>
@@ -93,7 +95,7 @@ export const StandardsSection: React.FC = () => (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
-           <img src="https://lh3.googleusercontent.com/pw/AP1GczPlP-6p1iRnG8i3lO6a0L1tuj3g873Gk07yxiV9dqbamIVZDUsgIKL9L45Bjcfk2If0lA_dyS9Ode3j_UOCMbjnDcFRa1wsd8_w1zwqneoT_uC2mhwlGupAhh-EYCMK-YEJxXKw4k2IC5hjSoUHOEy1=w1333-h750-s-no-gm?authuser=0" alt="Osiedle" className="rounded-2xl shadow-lg" />
+           <img src={png2} alt="Osiedle" className="rounded-2xl shadow-lg" />
         </div>
         <div className="order-1 lg:order-2">
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
@@ -136,18 +138,18 @@ export const StandardsSection: React.FC = () => (
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="order-2 lg:order-1">
-           <img src="https://lh3.googleusercontent.com/pw/AP1GczNkDmYZPTCKOtCMtSmNJfUqHotkMun86mGa7VP8wZ-msBOX1el8pmZUzt9EDakppf9X0GMRzCrHqp2FYnFe5blNBbfDfCZifF8Cic-gihv3F42k4FJvJQzN586FYaoudLYHlQ3Rvm1elp00ogrNjjCs=w1333-h750-s-no-gm?authuser=0" alt="Ogród" className="rounded-2xl shadow-lg" />
+           <img src={png3} alt="Ogród" className="rounded-2xl shadow-lg" />
         </div>
         <div className="order-1 lg:order-2">
           <div className="w-12 h-1 bg-primary-600 mb-6 rounded-full"></div>
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Prywatny ogródek do każdego mieszkania</h3>
           <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-            Niezależnie od wybranego piętra, zyskujesz przestrzeń na świeżym powietrzu. Mieszkania na parterze posiadają bezpośrednie wyjście 
+            Niezależnie od wybranego piętra, zyskujesz przestrzeń na świeżym powietrzu. Mieszkania posiadają bezpośrednie wyjście 
             na ogród z salonu, idealne na grilla czy zabawę dla dzieci.
           </p>
           <ul className="space-y-4">
-             <StandardListItem icon={<TreePine size={20} />} text="Ogródki do 150m²" />
-             <StandardListItem icon={<TreePine size={20} />} text="Przestronne balkony na piętrze" />
+             <StandardListItem icon={<TreePine size={20} />} text="Ogródki do 152m²" />
+             <StandardListItem icon={<TreePine size={20} />} text="Duża przestrzeń mieszkania" />
           </ul>
         </div>
       </div>
@@ -173,8 +175,8 @@ export const TechSpecs: React.FC = () => (
         <TechItem icon={<VolumeX />} text="Ściany wykonane z wysokiej jakości materiałów akustycznych" />
         <TechItem icon={<Layers />} text="Chodnik" />
         <TechItem icon={<Grid />} text="Media miejskie (woda, kanalizacja, gaz)" />
-        <TechItem icon={<Shield />} text="Własna brama i furtka dla każdego" />
-        <TechItem icon={<Car />} text="Podjazdy o pow. ok 60 m²" />
+        <TechItem icon={<Shield />} text="Teren zamknięty i ogrodzony" />
+        <TechItem icon={<Car />} text="2 miejsca postojowe" />
         <TechItem icon={<Layers />} text="Internet Światłowodowy" />
       </div>
     </div>

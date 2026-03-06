@@ -48,7 +48,7 @@ export const InteractiveMap: React.FC = () => {
         <div class="investment-marker">
           <div class="investment-pulse"></div>
           <div class="investment-dot"></div>
-          <div style="position: absolute; bottom: 35px; left: 50%; transform: translateX(-50%); background: #064e3b; color: white; padding: 6px 12px; border-radius: 6px; font-weight: bold; font-size: 14px; white-space: nowrap; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+          <div style="position: absolute; bottom: 35px; left: 50%; transform: translateX(-50%); background: #551cff; color: white; padding: 6px 12px; border-radius: 6px; font-weight: bold; font-size: 14px; white-space: nowrap; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
             Sybiraków
           </div>
         </div>

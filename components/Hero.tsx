@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, Wifi, ShieldCheck, Maximize } from 'lucide-react';
+import png1 from "../assets/png1.jpg";
 
 export const Hero: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -48,14 +49,15 @@ export const Hero: React.FC = () => {
         {/* Right Slider / Image */}
         <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] md:h-[500px]">
           <img 
-            src="https://lh3.googleusercontent.com/pw/AP1GczNw163adPKq2zoI0Cat2lF_JoHrQd14yKq-pl0NMlntJ4KRQQHyU2TkqedEU6zcDMYdcghM9x1fRVd5IN7GMVlRvGDQ92UwqTwMPZPZ0rn4NaDhl16YtSzZV0fKzHJwZycXLEpX061HPd6Cbs6IueVS=w1333-h750-s-no-gm?authuser=0" 
+            src={png1}
             alt="Wizualizacja osiedla" 
             className="w-full h-full object-cover"
           />
           {/* Badge on Image */}
           <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-5 py-3 rounded-lg shadow-md max-w-xs">
              <p className="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Status budowy</p>
-             <p className="font-bold text-lg text-primary-600">ZAKOŃCZONA</p>
+             <p className="font-bold text-lg text-primary-600">W REALIZACJI</p>
+             <p className="text-xs text-gray-500 uppercase font-bold tracking-wider mb-1">Planowany koniec budowy- Q2</p>
           </div>
         </div>
       </div>
@@ -63,10 +65,9 @@ export const Hero: React.FC = () => {
       {/* Features Bar */}
       <div className="relative z-10 -mt-10 mb-20 px-4">
         <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-xl p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
             <FeatureBox icon={<Home className="text-primary-600" />} title="Media miejskie" desc="Pełne uzbrojenie terenu" />
-            <FeatureBox icon={<ShieldCheck className="text-primary-600" />} title="Prywatność" desc="Własna brama i furtka" />
-            <FeatureBox icon={<Maximize className="text-primary-600" />} title="Duże podjazdy" desc="Powierzchnia ok. 60 m²" />
+            <FeatureBox icon={<Maximize className="text-primary-600" />} title="podjazdy" desc="2 miejsca postojowe" />
             <FeatureBox icon={<Home className="text-primary-600" />} title="Ogródki" desc="Nawet do 152m" />
             <FeatureBox icon={<Wifi className="text-primary-600" />} title="Technologia" desc="Światłowód" />
           </div>
