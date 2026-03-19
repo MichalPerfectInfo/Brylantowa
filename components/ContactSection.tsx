@@ -1,7 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { Mail, Phone, MapPin, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 import emailjs from "@emailjs/browser";
-import parkingImg from '../assets/parking.png';
 import { Polityka }  from "../data/polityka";
 
 export const AboutInvestor: React.FC = () => (
@@ -23,24 +22,6 @@ export const AboutInvestor: React.FC = () => (
         </p>
       </div>
       {/* Karta z obrazem w tle i przyciskiem */}
-      <div className="mt-12 relative rounded-xl overflow-hidden shadow-lg h-96 sm:h-[28rem]">
-  {/* Obraz w tle dopasowany do całej karty */}
-        <img
-          src={parkingImg}
-          alt="Nasze inwestycje"
-          className="absolute inset-0 w-full h-full object-cover brightness-75 blur-sm"
-        />
-        {/* Tekst i przycisk */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Poznaj nasze inne inwestycje</h3>
-          <a
-            href="https://szmaragdowa-nieruchomosci.pl"
-            className="bg-primary-400 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg text-lg transition-colors"
-          >
-            Zobacz więcej
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 );
