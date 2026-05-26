@@ -14,12 +14,10 @@ function loadGTM(gtmId: string): void {
   (window as any)._gtmLoaded = true;
   (window as any).dataLayer = (window as any).dataLayer || [];
   (window as any).dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
   document.head.appendChild(script);
-
   const noscript = document.createElement("noscript");
   const iframe = document.createElement("iframe");
   iframe.src = `https://www.googletagmanager.com/ns.html?id=${gtmId}`;
@@ -136,32 +134,32 @@ export default function CookieConsent({ gtmId }: CookieConsentProps) {
     <div style={styles.overlay}>
       <div style={styles.modal} role="dialog" aria-modal={true} aria-labelledby="cookie-title">
         <div style={styles.header}>
-          <p style={styles.label}>Prywatność</p>
+          <p style={styles.label}>Prywatnosc</p>
           <h2 id="cookie-title" style={styles.title}>
-            Ta strona używa plików cookies
+            Ta strona uzywa plikow cookies
           </h2>
           <p style={styles.description}>
-            Używamy cookies, aby poprawić Twoje doświadczenia, analizować ruch i
-            prowadzić działania marketingowe. Możesz wybrać, które kategorie akceptujesz.
+            Uzywamy cookies, aby poprawic Twoje doswiadczenia, analizowac ruch i
+            prowadzic dzialania marketingowe. Mozesz wybrac, ktore kategorie akceptujesz.
           </p>
         </div>
 
         {detailsOpen && (
           <div style={styles.detailsPanel}>
             <CategoryRow
-              label="Niezbędne"
-              description="Wymagane do działania strony"
+              label="Niezbedne"
+              description="Wymagane do dzialania strony"
               locked
             />
             <CategoryRow
               label="Analityczne"
-              description="Pomagają nam rozumieć ruch na stronie"
+              description="Pomagaja nam rozumiec ruch na stronie"
               checked={analytics}
               onChange={setAnalytics}
             />
             <CategoryRow
               label="Marketingowe"
-              description="Używane do personalizacji reklam"
+              description="Uzywane do personalizacji reklam"
               checked={marketing}
               onChange={setMarketing}
             />
@@ -171,7 +169,7 @@ export default function CookieConsent({ gtmId }: CookieConsentProps) {
         <div style={styles.footer}>
           <div style={styles.buttonRow}>
             <button style={styles.btnSecondary} onClick={() => saveConsent(false, false)}>
-              Odrzuć wszystko
+              Odrzuc wszystko
             </button>
             <button
               style={{ ...styles.btnSecondary, ...(detailsOpen ? styles.btnSecondaryActive : {}) }}
@@ -191,7 +189,7 @@ export default function CookieConsent({ gtmId }: CookieConsentProps) {
           )}
 
           <p style={styles.links}>
-            <a href="/polityka-prywatnosci" style={styles.link}>Polityka prywatności</a>
+            <a href="/polityka-prywatnosci" style={styles.link}>Polityka prywatnosci</a>
             {" · "}
             <a href="/polityka-cookies" style={styles.link}>Polityka cookies</a>
           </p>
