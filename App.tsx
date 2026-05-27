@@ -6,6 +6,7 @@ import { ApartmentList } from './components/ApartmentList';
 import { AdditionalInfo, ProcessSection } from './components/Process';
 import { AboutInvestor, ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 
 const App: React.FC = () => {
   return (
