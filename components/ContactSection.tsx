@@ -35,28 +35,49 @@ export const ContactSection: React.FC = () => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-  event.preventDefault();
-  setFormStatus("submitting");
-  const form = event.currentTarget;
-
-  try {
-    // Send form via EmailJS using the imported module
-    await emailjs.sendForm(
-      "service_yr06mln",
-      "template_2jnjybp",
-      form,
-      { publicKey: "nF9ENLBFiedvKYVlF" } // Correct format for public key in v4
-    );
-
-    setFormStatus("success");
-    form.reset();
-
-  } catch (error) {
-    console.error("EmailJS sending error:", error);
-    setFormStatus("error");
-  }
-};
+ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setFormStatus("submitting");
+    const form = event.currentTarget;
+ 
+    try {
+      await emailjs.sendForm(
+        "service_yr06mln",
+        "template_2jnjybp",
+        form,
+        { publicKey: "nF9ENLBFiedvKYVlF" }
+      );
+ 
+      // Jeśli user nie wyraził zgody na cookies wcześniej - robimy to teraz
+      const existing = localStorage.getItem('cookie_consent');
+      if (!existing) {
+        localStorage.setItem('cookie_consent', JSON.stringify({
+          necessary: true,
+          analytics: true,
+          marketing: true,
+          timestamp: new Date().toISOString(),
+          source: 'contact_form'
+        }));
+        const w = window as any;
+        if (!w._gtmLoaded) {
+          w._gtmLoaded = true;
+          w.dataLayer = w.dataLayer || [];
+          w.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          const s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5MMT78QR';
+          document.head.appendChild(s);
+        }
+      }
+ 
+      setFormStatus("success");
+      form.reset();
+ 
+    } catch (error) {
+      console.error("EmailJS sending error:", error);
+      setFormStatus("error");
+    }
+  };
 
   return (
     <section id="kontakt" className="py-20 bg-white scroll-mt-20">
