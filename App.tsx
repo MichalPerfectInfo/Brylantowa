@@ -11,6 +11,7 @@ import CookieConsent from './components/CookieConsent';
 const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans">
+      <CookieConsent gtmId="GTM-5MMT78QR" />
       <Navigation />
       <main className="flex-grow">
         <Hero />
