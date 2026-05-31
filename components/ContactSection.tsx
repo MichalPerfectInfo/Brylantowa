@@ -48,6 +48,9 @@ export const ContactSection: React.FC = () => {
         { publicKey: "nF9ENLBFiedvKYVlF" }
       );
  
+      const w = window as any;
+      w.dataLayer = w.dataLayer || [];
+
       // Jeśli user nie wyraził zgody na cookies wcześniej - robimy to teraz
       const existing = localStorage.getItem('cookie_consent');
       if (!existing) {
@@ -58,10 +61,8 @@ export const ContactSection: React.FC = () => {
           timestamp: new Date().toISOString(),
           source: 'contact_form'
         }));
-        const w = window as any;
         if (!w._gtmLoaded) {
           w._gtmLoaded = true;
-          w.dataLayer = w.dataLayer || [];
           w.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
           const s = document.createElement('script');
           s.async = true;
@@ -69,6 +70,9 @@ export const ContactSection: React.FC = () => {
           document.head.appendChild(s);
         }
       }
+
+      // Wyślij zdarzenie form_submit do GTM
+      w.dataLayer.push({ event: 'form_submit' });
  
       setFormStatus("success");
       form.reset();
